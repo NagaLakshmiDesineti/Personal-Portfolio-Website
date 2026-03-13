@@ -1,42 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagalakshmi Desineti | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nagalakshmi Desineti | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+position:fixed;
+width:100%;
+background:#101820;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
+
+header h1{
+color:#ff6b6b;
+font-size:1.5rem;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff6b6b;
+}
+
+section{
+padding:100px 40px 60px;
+min-height:100vh;
+text-align:center;
+}
+
+#home{
+background:linear-gradient(135deg,#101820,#2a2a40);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+#home h2{
+font-size:2.4rem;
+margin-bottom:10px;
+}
+
+#home p{
+color:#ddd;
+max-width:600px;
+}
+
+#about{
+background:white;
+}
+
+#about p{
+width:80%;
+margin:auto;
+line-height:1.6;
+}
+
+#skills{
+background:#f0f2f5;
+}
+
+.skills-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.skill{
+background:#101820;
+color:white;
+padding:10px 20px;
+border-radius:20px;
+}
+
+#projects{
+background:white;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:20px;
+}
+
+.project-card{
+background:#f8f9fa;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+color:#ff6b6b;
+margin-bottom:10px;
+}
+
+#coding{
+background:#f0f2f5;
+}
+
+#contact{
+background:white;
+}
+
+footer{
+background:#101820;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Nagalakshmi Desineti</h1>
-        <p>B.Tech Student | Python Developer | AI Enthusiast</p>
-    </header>
+<header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Enthusiastic IT student at Vignan's Nirula with skills in Python, SQL, and Machine Learning.</p>
-    </section>
+<h1>Nagalakshmi Desineti</h1>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Smart Surveillance System</h3>
-            <p>Real-time threat detection using YOLOv8 and OpenCV.</p>
-        </div>
-        <div class="project-card">
-            <h3>AI Hand Gesture Control</h3>
-            <p>Controlling devices using Computer Vision and Python.</p>
-        </div>
-    </section>
+<nav>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: it1269nagalakshmi@gmail.com</p>
-        <p><a href="https://www.hackerrank.com/profile/it1269nagalaksh1">HackerRank</a> | <a href="https://www.codechef.com/users/nagalakshmi69">CodeChef</a></p>
-    </section>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#coding">Coding</a>
+<a href="#contact">Contact</a>
 
-    <footer>
-        <p>&copy; 2024 Nagalakshmi Desineti</p>
-    </footer>
+</nav>
+
+</header>
+<section id="home">
+
+<h2>Hello, I'm <span style="color:#ff6b6b;">Nagalakshmi Desineti</span></h2>
+
+<p>B.Tech Information Technology Student | Aspiring Software Developer</p>
+
+<br>
+
+<p>
+I enjoy solving programming problems and building practical software projects.
+I have solved more than 500 coding problems across platforms like CodeChef,
+HackerRank, and LeetCode.
+</p>
+
+</section>
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am a B.Tech Information Technology student at Vignan's Nirula Institute of Technology and Science for Women with a CGPA of 8.6.
+
+I am passionate about problem solving and software development. I regularly practice coding problems and have solved over 500 problems across coding platforms such as CodeChef, HackerRank, and LeetCode.
+
+During my academic projects, I worked on computer vision based applications using Python libraries and developed small systems such as gesture based control and surveillance threat detection prototypes.
+
+Currently I am focusing on strengthening my Data Structures, Algorithms, SQL, and backend development skills to pursue Software Development Engineer roles.
+
+</p>
+
+</section>
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-list">
+
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">SQL</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Data Structures</div>
+<div class="skill">Algorithms</div>
+<div class="skill">Problem Solving</div>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="project-grid">
+<div class="project-card">
+<h3>Smart Surveillance Threat Detection</h3>
+<p>
+A computer vision based prototype that processes webcam video and detects potential threats using Python libraries.
+</p>
+<br>
+<p>
+Features include real time video processing, object detection, and automated email alerts when suspicious activity is detected.
+</p>
+</div>
+<div class="project-card">
+<h3>AI Hand Gesture Smart Control</h3>
+
+<p>
+A gesture recognition prototype that detects hand movements and finger patterns using computer vision libraries and maps them to control actions.
+</p>
+<br>
+<p>
+The system performs real time hand tracking and recognizes gestures to simulate smart control commands.
+</p>
+</div>
+<div class="project-card">
+<h3>Personal Portfolio Website</h3>
+<p>
+A responsive portfolio website developed using HTML and CSS to showcase my projects, technical skills, and coding profiles.
+</p>
+</div>
+</div>
+
+</section>
+<section id="coding">
+
+<h2>Coding Profiles</h2>
+
+<p>
+CodeChef – Solved 500+ programming problems
+</p>
+<br>
+<a href="https://www.codechef.com/users/nagalakshmi69" target="_blank">
+Visit CodeChef Profile
+</a>
+<br><br>
+<p>GitHub</p>
+<br>
+<a href="https://github.com/NagaLakshmiDesineti" target="_blank">
+Visit GitHub
+</a>
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+<p>Email: it1269nagalakshmi@gmail.com</p>
+<br>
+<p>
+LinkedIn
+</p>
+<a href="https://www.linkedin.com/in/nagalakshmi-desineti-233769346" target="_blank">
+linkedin.com/in/nagalakshmi-desineti
+</a>
+<br><br>
+<p>Location: Guntur, Andhra Pradesh, India</p>
+</section>
+<footer>
+<p>© 2026 Nagalakshmi Desineti</p>
+</footer>
 </body>
 </html>
